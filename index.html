@@ -612,6 +612,27 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        /* Notificación de formulario */
+        .form-notification {
+            display: none;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+            text-align: center;
+        }
+        
+        .form-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        
+        .form-error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
     </style>
 </head>
 <body>
@@ -669,7 +690,107 @@
         <div class="container">
             <h2 class="section-title">Experiencia Laboral</h2>
             <div class="timeline">
-                <!-- Tus elementos de timeline aquí (sin cambios) -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="company">CaixaBank Tech</span>
+                        <span class="job-date">may. 2024 - actualidad · 1 año 4 meses · Madrid, España · Híbrido</span>
+                        <h3>Data Engineer</h3>
+                        <ul>
+                            <li>Gestión de bases de datos en Oracle y GCP, optimizando rendimiento y disponibilidad.</li>
+                            <li>Extracción y análisis de información mediante Información Schema.</li>
+                            <li>Desarrollo de componentes ALM para la creación de Airflow DAGs.</li>
+                            <li>Implementación y optimización de SQL en DBT para procesos ETL/ELT.</li>
+                            <li>Mantenimiento y supervisión de pipelines de datos.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">Oracle</span>
+                            <span class="tech-pill">GCP</span>
+                            <span class="tech-pill">Airflow</span>
+                            <span class="tech-pill">DBT</span>
+                            <span class="tech-pill">SQL</span>
+                            <span class="tech-pill">ETL/ELT</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="company">CaixaBank Tech</span>
+                        <span class="job-date">sept. 2023 - may. 2024 · 9 meses · Madrid, España · Híbrido</span>
+                        <h3>Data Scientist IA</h3>
+                        <ul>
+                            <li>Análisis y modelado de datos para extraer insights y apoyar la toma de decisiones.</li>
+                            <li>Desarrollo e implementación de modelos de machine learning para predicción y clasificación.</li>
+                            <li>Limpieza, transformación y procesamiento de datos mediante Python, SQL y herramientas de big data.</li>
+                            <li>Visualización de datos con Power BI, Tableau o Matplotlib/Seaborn.</li>
+                            <li>Creación y optimización de pipelines de datos para modelos de IA/ML.</li>
+                            <li>Validación y evaluación de modelos mediante métricas de rendimiento.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-pill">Machine Learning</span>
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">SQL</span>
+                            <span class="tech-pill">Power BI</span>
+                            <span class="tech-pill">Tableau</span>
+                            <span class="tech-pill">Big Data</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="company">Leadtech Group</span>
+                        <span class="job-date">nov. 2022 - ago. 2023 · 10 meses</span>
+                        <h3>Automation Specialist (RPA)</h3>
+                        <ul>
+                            <li>Creación, diseño, desarrollo e implementación de sistemas automatizados.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-pill">RPA</span>
+                            <span class="tech-pill">Automatización</span>
+                            <span class="tech-pill">Sistemas</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="company">NTT DATA Europe & LATAM</span>
+                        <span class="job-date">abr. 2022 - nov. 2022 · 8 meses · Alicante, España</span>
+                        <h3>Business Analyst</h3>
+                        <ul>
+                            <li>Creación de informes visuales.</li>
+                            <li>Automatización y optimización de archivos para el Back Office.</li>
+                            <li>Gestión de Bases de Datos.</li>
+                            <li>Realización de tareas de Backlog.</li>
+                            <li>Extracción de datos de una API.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-pill">Análisis de Negocio</span>
+                            <span class="tech-pill">Bases de Datos</span>
+                            <span class="tech-pill">API</span>
+                            <span class="tech-pill">Automatización</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <span class="company">NTT DATA Europe & LATAM</span>
+                        <span class="job-date">oct. 2021 - abr. 2022 · 7 meses · Alicante, España</span>
+                        <h3>Analista de datos (Prácticas)</h3>
+                        <ul>
+                            <li>Análisis de datos empresariales para la toma de decisiones.</li>
+                            <li>Desarrollo de informes y dashboards para visualización de datos.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-pill">Análisis de Datos</span>
+                            <span class="tech-pill">Visualización</span>
+                            <span class="tech-pill">Business Intelligence</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -678,7 +799,28 @@
         <div class="container">
             <h2 class="section-title">Formación Académica</h2>
             <div class="education-container">
-                <!-- Tus elementos de educación aquí (sin cambios) -->
+                <div class="education-card">
+                    <h3>Máster en Inteligencia Artificial</h3>
+                    <span class="education-date">sept. 2022 - jun. 2024</span>
+                    <p><strong>UNIR - Universidad Internacional de La Rioja</strong></p>
+                    <p>Especialización en técnicas avanzadas de inteligencia artificial, machine learning и deep learning.</p>
+                    <span class="education-grade">Nota: 9.4</span>
+                    <div class="tech-stack">
+                        <span class="tech-pill">TensorFlow</span>
+                        <span class="tech-pill">Apache Spark</span>
+                        <span class="tech-pill">Machine Learning</span>
+                        <span class="tech-pill">Deep Learning</span>
+                    </div>
+                </div>
+                
+                <div class="education-card">
+                    <h3>Grado en Estadística Empresarial</h3>
+                    <span class="education-date">sept. 2018 - jul. 2022</span>
+                    <p><strong>Universidad Miguel Hernández de Elche</strong></p>
+                    <p>Formación en técnicas estadísticas aplicadas al ámbito empresarial y económico.</p>
+                    <span class="education-grade">Nota: 7.43</span>
+                    <p><em>Subdelegado los años 2019/20, 2020/21, 2021/22</em></p>
+                </div>
             </div>
         </div>
     </section>
@@ -687,7 +829,27 @@
         <div class="container">
             <h2 class="section-title">Proyectos Personales</h2>
             <div class="projects-grid">
-                <!-- Tus elementos de proyectos aquí (sin cambios) -->
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Proyecto 1" class="project-image">
+                    <div class="project-info">
+                        <h3>Migración GCP con dbt</h3>
+                        <p>Arquitectura de datos escalable en Google Cloud Platform utilizando dbt para transformaciones y Airflow para orquestación.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Proyecto 2" class="project-image">
+                    <div class="project-info">
+                        <h3>Plataforma Analytics</h3>
+                        <p>Sistema de análisis de datos en tiempo real con procesamiento de streams y visualización interactiva.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Proyecto 3" class="project-image">
+                    <div class="project-info">
+                        <h3>App de Gestión Deportiva</h3>
+                        <p>Aplicación para planificar y seguir entrenamientos, con estadísticas y progreso para atletas de resistencia.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -696,7 +858,27 @@
         <div class="container">
             <h2 class="section-title">Logros Deportivos</h2>
             <div class="achievement-cards">
-                <!-- Tus elementos de logros deportivos aquí (sin cambios) -->
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3>Maratón</h3>
+                    <p>Elche 2025</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3>Ironman70.3</h3>
+                    <p>Preparación para 2027</p>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Ironman</h3>
+                    <p>Preparación para 2028</p>
+                </div>
             </div>
             
             <div class="countdown">
@@ -726,19 +908,24 @@
     <section id="contacto">
         <div class="container">
             <h2 class="section-title">Contacto</h2>
+            <div id="form-notification" class="form-notification"></div>
             <div class="contact-form">
                 <form id="contactForm">
                     <div class="form-group">
                         <label for="name">Nombre</label>
-                        <input type="text" id="name" required>
+                        <input type="text" id="name" name="name" required>
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" required>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Asunto</label>
+                        <input type="text" id="subject" name="subject" required>
                     </div>
                     <div class="form-group">
                         <label for="message">Mensaje</label>
-                        <textarea id="message" required></textarea>
+                        <textarea id="message" name="message" required></textarea>
                     </div>
                     <button type="submit" class="btn">Enviar Mensaje</button>
                 </form>
@@ -749,7 +936,7 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/joanespasa/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/joan-espasa/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                 <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -814,10 +1001,26 @@
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             
-            // Aquí normalmente conectarías con un servicio de backend
-            // Por ahora solo mostraremos un mensaje de éxito
-            alert('¡Gracias por tu mensaje! Te responderé pronto.');
-            this.reset();
+            const formData = new FormData(this);
+            const notification = document.getElementById('form-notification');
+            
+            // Simular envío del formulario (en un caso real, usarías fetch o formspree)
+            setTimeout(() => {
+                notification.textContent = '¡Gracias por tu mensaje! Te responderé pronto a espasa35@gmail.com.';
+                notification.className = 'form-notification form-success';
+                notification.style.display = 'block';
+                
+                // Desplazar hacia la notificación
+                notification.scrollIntoView({ behavior: 'smooth' });
+                
+                // Limpiar formulario
+                this.reset();
+                
+                // Ocultar notificación después de 5 segundos
+                setTimeout(() => {
+                    notification.style.display = 'none';
+                }, 5000);
+            }, 1000);
         });
 
         // Menú hamburguesa para móviles
