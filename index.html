@@ -339,7 +339,7 @@
         
         .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
             gap: 30px;
         }
         
@@ -349,6 +349,9 @@
             overflow: hidden;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
         
         .project-card:hover {
@@ -367,7 +370,31 @@
         }
         
         .project-info {
-            padding: 20px;
+            padding: 25px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .project-info h3 {
+            color: var(--secondary);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        
+        .project-info p {
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        
+        .project-type {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 15px;
         }
         
         .sports-achievements {
@@ -572,6 +599,10 @@
             .countdown-number {
                 font-size: 2rem;
             }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         /* Animaciones */
@@ -645,7 +676,7 @@
                     <li><a href="#sobre-mi">Sobre mí</a></li>
                     <li><a href="#experiencia">Experiencia</a></li>
                     <li><a href="#educacion">Educación</a></li>
-                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#proyectos">Proyectos Académicos</a></li>
                     <li><a href="#deportes">Logros Deportivos</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
@@ -827,27 +858,37 @@
 
     <section id="proyectos">
         <div class="container">
-            <h2 class="section-title">Proyectos Personales</h2>
+            <h2 class="section-title">Proyectos Académicos</h2>
             <div class="projects-grid">
                 <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Proyecto 1" class="project-image">
+                    <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Predicción bolsa española" class="project-image">
                     <div class="project-info">
-                        <h3>Migración GCP con dbt</h3>
-                        <p>Arquitectura de datos escalable en Google Cloud Platform utilizando dbt para transformaciones y Airflow para orquestación.</p>
+                        <span class="project-type">TFG</span>
+                        <h3>APLICACIÓN DE SERIES TEMPORALES PARA EL ANÁLISIS Y PREDICCIÓN DE LA BOLSA ESPAÑOLA</h3>
+                        <p>Trabajo de Fin de Grado donde apliqué técnicas avanzadas de series temporales para analizar y predecir el comportamiento del mercado bursátil español. Desarrollé modelos predictivos utilizando metodologías estadísticas para identificar patrones y tendencias en los datos financieros.</p>
+                        <div class="tech-stack">
+                            <span class="tech-pill">Series Temporales</span>
+                            <span class="tech-pill">Análisis Predictivo</span>
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">Pandas</span>
+                            <span class="tech-pill">Statsmodels</span>
+                        </div>
                     </div>
                 </div>
+                
                 <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Proyecto 2" class="project-image">
+                    <img src="https://images.unsplash.com/photo-1640826514546-7d2eab70a4e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Predicción S&P500 con IA" class="project-image">
                     <div class="project-info">
-                        <h3>Plataforma Analytics</h3>
-                        <p>Sistema de análisis de datos en tiempo real con procesamiento de streams y visualización interactiva.</p>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Proyecto 3" class="project-image">
-                    <div class="project-info">
-                        <h3>App de Gestión Deportiva</h3>
-                        <p>Aplicación para planificar y seguir entrenamientos, con estadísticas y progreso para atletas de resistencia.</p>
+                        <span class="project-type">TFM</span>
+                        <h3>UTILIZACIÓN DE TÉCNICAS DE LA IA PARA LA PREDICCIÓN DEL S&P500</h3>
+                        <p>Trabajo de Fin de Máster donde implementé y evalué diversas técnicas de Inteligencia Artificial para predecir los movimientos del índice S&P500. Comparé el rendimiento de modelos tradicionales con approaches modernos de machine learning y deep learning, demostrando la superioridad de estos últimos en la predicción de mercados financieros complejos.</p>
+                        <div class="tech-stack">
+                            <span class="tech-pill">Inteligencia Artificial</span>
+                            <span class="tech-pill">Machine Learning</span>
+                            <span class="tech-pill">Deep Learning</span>
+                            <span class="tech-pill">TensorFlow</span>
+                            <span class="tech-pill">Análisis Financiero</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -937,9 +978,8 @@
         <div class="container">
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/joan-espasa/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/Espaseta35" aria-label="GitHub"><i class="fab fa-github"></i></a>
+
             </div>
             <p>&copy; 2023 Joan Espasa. Todos los derechos reservados.</p>
             <p class="copyright">Desarrollado con pasión y determinación</p>
